@@ -1,11 +1,12 @@
 const path = require('path');
 const port = 3001;
+
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'docs'),
   },
   module: {
     rules: [
@@ -26,7 +27,7 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: path.join(__dirname, 'docs'),
     },
     // allowedHosts: 'all',
 

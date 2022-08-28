@@ -19,24 +19,23 @@
   margin: 0px 10px;
 }
 .header__button__menu--hover :nth-child(1) {
-  transform: rotate(90deg);
+  transform: rotate(-45deg);
   top: 8px;
 }
 .header__button__menu--hover :nth-child(2) {
-  transform: rotate(180deg);
+  transform: rotate(45deg);
 }
 .header__button__menu--hover :nth-child(3) {
-  transform: rotate(-90deg);
+  transform: rotate(-45deg);
   top: -8px;
 }
-
-/* modificações JavaScript box over */
 
 @media (max-width: 860px) {
   div.header__button__menu {
     display: block;
     position: relative;
     right: 25px;
+    top: -16px;
     height: 60px;
     width: 60px;
   }

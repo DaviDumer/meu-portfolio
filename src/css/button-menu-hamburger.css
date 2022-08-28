@@ -1,0 +1,43 @@
+.header__button__menu {
+  display: none;
+}
+.header__button__menu div {
+  width: 60px;
+  height: 8px;
+  background-color: grey;
+  margin: 10px;
+  border-radius: 2px;
+  transition: transform ease-in-out 0.1s;
+}
+
+/* modificações JavaScript animação button */
+.header__button__menu--hover {
+  padding-top: 20px;
+}
+.header__button__menu--hover div {
+  position: relative;
+  margin: 0px 10px;
+}
+.header__button__menu--hover :nth-child(1) {
+  transform: rotate(90deg);
+  top: 8px;
+}
+.header__button__menu--hover :nth-child(2) {
+  transform: rotate(180deg);
+}
+.header__button__menu--hover :nth-child(3) {
+  transform: rotate(-90deg);
+  top: -8px;
+}
+
+/* modificações JavaScript box over */
+
+@media (max-width: 860px) {
+  div.header__button__menu {
+    display: block;
+    position: relative;
+    right: 25px;
+    height: 60px;
+    width: 60px;
+  }
+}

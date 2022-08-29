@@ -3,7 +3,6 @@
   height: 100%;
   grid-row-start: 1;
   grid-row-end: 3;
-  /* margin: 0px 0px 120px 0px; */
   transition: width ease-in-out 0.2s;
 }
 
@@ -36,6 +35,7 @@
 }
 .s-about-me__tabs > div:hover {
   background-color: #000;
+  cursor: pointer;
 }
 
 /* Text Box */

@@ -1,6 +1,7 @@
 .header__button__menu {
   display: none;
   transform: scale(0.8);
+  cursor: pointer;
 }
 .header__button__menu div {
   width: 60px;
@@ -12,21 +13,21 @@
 }
 
 /* modificações JavaScript animação button */
-.header__button__menu--active {
+.js-header__button__menu--active {
   top: 10px;
 }
-.header__button__menu--active div {
+.js-header__button__menu--active > div {
   position: relative;
   margin: 0px 10px;
 }
-.header__button__menu--active :nth-child(1) {
+.js-header__button__menu--active > :nth-child(1) {
   transform: rotate(-45deg);
   top: 8px;
 }
-.header__button__menu--active :nth-child(2) {
+.js-header__button__menu--active > :nth-child(2) {
   transform: rotate(45deg);
 }
-.header__button__menu--active :nth-child(3) {
+.js-header__button__menu--active > :nth-child(3) {
   transform: rotate(-45deg);
   top: -8px;
 }

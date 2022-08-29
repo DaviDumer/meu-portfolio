@@ -7,34 +7,45 @@ import './css/section-about-me.css';
 import './css/my-history.css';
 import './css/projects.css';
 import './css/about-portf.css';
+import './css/footer.css';
+
+var linkProjects = document.querySelectorAll('.js-project__about');
+
+linkProjects.forEach((e, i) => {
+  // Abre links dos projetos.
+  e.addEventListener('click', function () {
+    window.open(`${e.getAttribute('data-link')}`, '_blank');
+  });
+});
 
 var buttonHamburger = document.querySelector('.js-header__button__menu');
 var overMenu = document.querySelector('.js-header__over__menu');
-// var eventLink = document.querySelector('.js-header__container');
 var eventLink2 = Array.from(document.querySelectorAll('.js-header-link2'));
 
 var clickbuttonHamburger = false;
 
 function handleClickButtonHamburger(e) {
+  // Dispara as animações do menu.
   if (!clickbuttonHamburger) {
-    overMenu.classList.add('c-header__over__menu--Show');
-    buttonHamburger.classList.add('header__button__menu--active');
+    overMenu.classList.add('js-header__over__menu--Show');
+    buttonHamburger.classList.add('js-header__button__menu--active');
     clickbuttonHamburger = true;
   } else {
-    overMenu.classList.remove('c-header__over__menu--Show');
-    buttonHamburger.classList.remove('header__button__menu--active');
+    overMenu.classList.remove('js-header__over__menu--Show');
+    buttonHamburger.classList.remove('js-header__button__menu--active');
     clickbuttonHamburger = false;
   }
 }
 function handleEventLinkMenu(event) {
   if (event.target.tagName === 'A') {
-    overMenu.classList.remove('c-header__over__menu--Show');
-    buttonHamburger.classList.remove('header__button__menu--active');
+    overMenu.classList.remove('js-header__over__menu--Show');
+    buttonHamburger.classList.remove('js-header__button__menu--active');
     clickbuttonHamburger = false;
   }
 }
 
 eventLink2.forEach((e, i) => {
+  // Abre links das redes sociais.
   switch (i) {
     case 0:
       e.onclick = () => window.open('https://github.com/DaviDumer/', '_blank');
@@ -64,7 +75,7 @@ eventLink2.forEach((e, i) => {
 buttonHamburger.onclick = handleClickButtonHamburger;
 overMenu.onclick = handleEventLinkMenu;
 
-var aboutMeTab = document.querySelectorAll('.js-about-me__tab');
+var aboutMeTab = document.querySelectorAll('.js-about-me__tab'); // libera as listas de Skills, para cada click de suas respectivas Tabs.
 aboutMeTab.forEach(e => {
   e.addEventListener('click', function ({ target }) {
     var value;
@@ -145,7 +156,7 @@ aboutMeTab.forEach(e => {
   });
 });
 
-function updatedTextOlBox(
+function updatedTextOlBox( // Atualiza os text-box das skills
   Labels = ['1 Tecnologías:', '2 Skills:'],
   listOfTexts
 ) {

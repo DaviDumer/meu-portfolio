@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Merriweather;
+}
+.u-label-box {
+  color: #fff;
+  margin: 40px 0px 20px 0px;
+}
+
+@media (max-width: 1023px) {
+  .u-label-box {
+    font-size: 0.9rem;
+  }
+}

@@ -1,3 +1,22 @@
+.s-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 250px;
+  background-color: #000;
+  border-bottom-width: 1px;
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  transition: height ease-in-out 0.5s;
+}
+.s-header__container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  transition: width ease-in-out 0.6s;
+}
+
 /* Perfil */
 .header__perfil {
   height: 100%;
@@ -59,6 +78,7 @@
 .header__link__social__icon:hover {
   background-color: #000000;
   box-shadow: inset 0px 0px 20px #fff, 0px 0px 10px #fff;
+  cursor: pointer;
 }
 
 /* LINKs Internos */
@@ -86,6 +106,12 @@
   color: #5d5d5d;
 }
 
+@media (max-width: 1300px) {
+  .s-header__container {
+    width: 98%;
+  }
+}
+
 @media (max-width: 1060px) {
   .header__links__social {
     width: 380px;
@@ -98,6 +124,9 @@
   }
 }
 @media (max-width: 860px) {
+  .s-header {
+    height: 100px;
+  }
   .header__perfil__photo {
     width: 80px;
     height: 80px;

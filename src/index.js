@@ -183,3 +183,24 @@ function updatedTextOlBox( // Atualiza os text-box das skills
     textBox.appendChild(element);
   });
 }
+
+var bodyScrol = document.querySelector('#root');
+var headerScroll = document.querySelector('.js-header--scroll');
+var headerPhotoScroll = document.querySelector(
+  '.js-header__perfil__photo--scroll'
+);
+
+bodyScrol.onscroll = () => {
+  if (
+    window.scrollY > 0 &&
+    !headerScroll.classList.contains('js-header--scroll-active')
+  ) {
+    headerScroll.classList.add('js-header--scroll-active');
+    headerPhotoScroll.classList.add('js-header__perfil__photo--scroll-active');
+  } else if (!window.scrollY) {
+    headerScroll.classList.remove('js-header--scroll-active');
+    headerPhotoScroll.classList.remove(
+      'js-header__perfil__photo--scroll-active'
+    );
+  }
+};

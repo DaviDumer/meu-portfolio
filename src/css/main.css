@@ -25,7 +25,7 @@
 
 @media (max-width: 1023px) {
   .s-main-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -1,6 +1,8 @@
 .s-my-history {
-  width: 40%;
-  height: 920px;
+  width: 100%;
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
 .s-my-history__text-box {
@@ -27,8 +29,8 @@
   border-top-right-radius: 6px;
 }
 
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
   .s-my-history {
     width: 100%;
   }
-}
+} */

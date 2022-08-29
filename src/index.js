@@ -5,6 +5,8 @@ import './css/button-menu-hamburger.css';
 import './css/over-menu.css';
 import './css/section-about-me.css';
 import './css/my-history.css';
+import './css/projects.css';
+import './css/about-portf.css';
 
 var buttonHamburger = document.querySelector('.js-header__button__menu');
 var overMenu = document.querySelector('.js-header__over__menu');

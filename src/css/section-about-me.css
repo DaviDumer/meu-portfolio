@@ -1,7 +1,9 @@
 .s-about-me {
-  width: 60%;
-  height: 600px;
-  margin: 0px 0px 120px 0px;
+  width: 100%;
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* margin: 0px 0px 120px 0px; */
   transition: width ease-in-out 0.2s;
 }
 
@@ -62,9 +64,6 @@
 }
 
 @media (max-width: 1023px) {
-  .s-about-me {
-    width: 100%;
-  }
   .s-about-me__tabs p {
     font-weight: bold;
     font-size: 0.7rem;

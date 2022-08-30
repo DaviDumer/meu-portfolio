@@ -120,7 +120,7 @@ aboutMeTab.forEach(e => {
           ],
         ]);
         break;
-      case 'Mobile / Desktop':
+      case 'Mobile/Desktop':
         updatedTextOlBox(undefined, [
           ['Node js.', 'React-Native js.', 'Android Studio.', 'Electron js.'],
           [

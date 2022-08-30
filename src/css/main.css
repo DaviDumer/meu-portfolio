@@ -9,13 +9,22 @@
 }
 .s-main-container {
   width: 80vw;
-  padding-bottom: 300px;
   display: grid;
-  grid-template-rows: 200px 200px 280px 280px 280px;
+  grid-template-rows: 200px 200px 280px 280px 280px 260px;
   grid-template-columns: 1fr 1fr;
   column-gap: 16px;
   row-gap: 120px;
   transition: width ease-in-out 0.6s;
+}
+#fraseChamativa {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  grid-column: 1 / span 2;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  padding: 100px 0;
 }
 
 @media (max-width: 1300px) {

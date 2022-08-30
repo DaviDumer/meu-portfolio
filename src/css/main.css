@@ -5,6 +5,7 @@
   background-color: #323232;
   width: 100%;
   height: auto;
+  padding-top: 250px;
 }
 .s-main-container {
   width: 80vw;
@@ -27,5 +28,11 @@
   .s-main-container {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 860px) {
+  .s-main {
+    padding-top: 100px;
   }
 }

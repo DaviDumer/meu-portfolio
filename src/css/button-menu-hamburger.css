@@ -2,6 +2,8 @@
   display: none;
   transform: scale(0.8);
   cursor: pointer;
+  z-index: 1;
+  position: fixed;
 }
 .header__button__menu div {
   width: 60px;
